@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="signupbody">
+    
+<h1 align="center">Signup To Fregrance</h1>
+
+<div id="signupform">
+    <form action="login.html" onsubmit="datasubmit()">
+        <label for="">UserName</label>
+        <input type="text" id="uname" placeholder="Enter UserName"> <br><br>
+    
+       
+    
+        <label for="">Password</label>
+        <input type="text" id="upsw" placeholder="Enter Password"> <br><br>
+    
+    
+        <label for="">Email Id</label>
+        <input type="email" id="email" placeholder="Enter Email ID"> <br> <br>
+    
+       <button>sign up</button> <br><br>
+       
+    
+    
+        
+    </form>
+</div>
+
+
+
+<script>
+    const datasubmit = () => {
+        let userdata = {
+            name : document.querySelector("#uname").value,
+            
+            psw : document.querySelector("#upsw").value,
+            email : document.querySelector("#email").value
+        }
+
+        localStorage.setItem("userdata",JSON.stringify(userdata))
+    }
+</script>
+
+</body>
+</html>

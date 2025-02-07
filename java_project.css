@@ -1,0 +1,164 @@
+#Discount
+{
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-left: 40%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+
+#navbar
+{
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+#nav_icon
+{
+    align-items: center;
+    gap: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+
+
+#navbar ul
+
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#parant_navbar
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+
+#perfumebar1 img
+{
+    border-radius: 10px;
+}
+
+#perfumebar1 img:hover
+{
+    scale: 1.1;
+    display: block;
+    box-shadow: 2px 2px 2px 4px white;
+    transition: all .3s;
+}
+.button
+{
+    margin-left: 110px;
+    /* display: none; */
+    font-size: 20px;
+}
+
+#perfumebar_common
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+#art
+{
+    padding: 20px;
+    background-color: black;
+    padding-top: -300px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    border-radius: 20px;
+}
+
+#art p
+{
+    padding: 50px;
+}
+
+
+
+.mid_div
+{
+    background-image: url(perfume_for_show.jpg);
+    padding: 200px;
+    color: aliceblue;
+}
+
+
+/* //footer */
+
+#footer
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 30px;
+    padding-bottom: 100px;
+    background-image: url(perfume_footer.jpg);
+    color: white;
+}
+
+#footer_icons
+{
+    gap: 30px;
+    font-size: 30px;
+}
+
+
+.mid_div
+{
+    font-size: 20px;
+}
+
+/* perfume_information */
+#pi_top
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#pi_top2
+{
+    font-size: 20px;
+}
+
+#pi_button
+{
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+#pi_button1
+{
+    font-size: 40px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#pi_button2
+{
+    font-size: 40px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#discription p
+{
+    font-size: 20px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   
+    <form action="" onsubmit="return check()">
+        <label for="">UserName</label>
+        <input type="text" id="uname" placeholder="Enter UserName"> <br><br>
+    
+       
+    
+        <label for="">Password</label>
+        <input type="text" id="upsw" placeholder="Enter Password"> <br><br>
+    
+        <input type="submit" value="login" >
+    
+    
+        
+    </form>
+
+
+    <script>
+        function check()
+        {
+          
+            let logindata = {
+             name : document.querySelector("#uname").value,
+             psw : document.querySelector("#upsw").value
+            }
+
+
+            
+           let data = JSON.parse(localStorage.getItem('userdata'))
+           
+           if(data.name != logindata.name || data.psw != logindata.psw)
+           {
+            alert("user not found")
+            return false
+           }
+          
+        }
+    </script>
+    
+
+
+</body>
+</html>
