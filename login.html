@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="java_project.css">
 </head>
 <body>
+
+
+
+    <div id="parant_navbar">
+        <div> <img src="fashion_14091764.png" alt="" width="70px" height="70px"></div>
+        <div id="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Gifting</li>
+                <li>About</li>
+                <li>Our Stores</li>
+                <li>Press & Media</li>
+                <li>Order Tracking</li>
+            </ul>
+           
+        </div>
+        <div id="nav_icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-cart-shopping"></i>
+            <i class="fa-regular fa-user"></i>
+        </div>
+       </div>
     
+
+    
+    <form action="perfume_form.html" onsubmit="return check()" id="login_form">
+
+        <h1 align="center">Login To Fregrance</h1>
    
-    <form action="" onsubmit="return check()">
         <label for="">UserName</label>
         <input type="text" id="uname" placeholder="Enter UserName"> <br><br>
     
@@ -16,36 +44,54 @@
     
         <label for="">Password</label>
         <input type="text" id="upsw" placeholder="Enter Password"> <br><br>
+
+        <label for="">Email Id</label>
+        <input type="email" id="email" placeholder="Enter Email Id "> <br><br>
     
-        <input type="submit" value="login" >
+        <button>Login</button> <br><br>
     
     
         
     </form>
+        <br><br><br><br>
 
 
-    <script>
-        function check()
-        {
-          
-            let logindata = {
-             name : document.querySelector("#uname").value,
-             psw : document.querySelector("#upsw").value
-            }
+    <!-- <footer></footer> -->
+
+    <section id="footer">
+        <div id="footer_icons"><h2>COMMUNITY </h2> <hr>  <br>
+            <i class="fa-brands fa-facebook" style="color: #f1f2f4;"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
 
 
-            
-           let data = JSON.parse(localStorage.getItem('userdata'))
-           
-           if(data.name != logindata.name || data.psw != logindata.psw)
-           {
-            alert("user not found")
-            return false
-           }
-          
-        }
-    </script>
-    
+        <div><h2>IMPORTANT LINKS</h2>  <hr>
+            <p>Terms and conditions <br>Privacy and policy  <br> Return and refund policy  <br>  </p>
+        </div>
+
+
+        <div><h2>QUICK LINKS</h2>  <hr>
+            <p>Home  <br>  Catalog <br>  Contact</p>
+        </div>
+
+
+
+        <div><h2>CONTACT US</h2>  <hr>
+            <p>Zed Lifestyle Pvt. Ltd,
+                711, Shapath V,
+                Opp. Karnavati Club,
+                SG Highway, Prahlad Nagar
+                Ahmedabad, Gujarat – 380015
+                
+                Email: support@thefreed.world
+                
+                Phone: +91 7818000555</p>
+        </div>
+    </section>
+
+
+   <script src="index.js"></script>
 
 
 </body>

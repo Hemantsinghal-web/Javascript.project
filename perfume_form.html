@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ordering Form</title>
     <link rel="stylesheet" href="java_project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body id="signupbody">
-
-
+<body id="form_body">
+    
     <div id="parant_navbar">
         <div> <img src="fashion_14091764.png" alt="" width="70px" height="70px"></div>
         <div id="navbar">
@@ -30,36 +29,66 @@
             <i class="fa-regular fa-user"></i>
         </div>
        </div>
-    
+
+
+      <div id="perfume_form">
+       
+
+        <form action="index.html" onsubmit="savedata()">
+            <h1> Product Ordering Form </h1>
+         <label for="name">Name</label>
+         <input type="text" placeholder="First Name" required  id="fname">
+         <input type="text" placeholder="Last Name" required  id="lname"><br><br>
+ 
+         <label for="contact">Contact.No</label>
+         <input type="number" placeholder="Enter Contact" required  id="contact"><br><br>
+ 
+         <label for="email">Email Id</label>
+         <input type="email" placeholder="Enter Email Id" required  id="email"><br><br>
+ 
+         <label for="adderss">Adderss</label>
+         <input type="text" placeholder="Enter Address" required  id="address"><br><br>
+ 
+         <label for="state">State</label>
+         <input type="text" placeholder="Enter State" required  ><br><br>
+ 
+         <label for="land">Land Mark</label>
+         <input type="text" placeholder="Enter Land Mark" required><br><br>
        
 
 
-    <form action="login.html" onsubmit="datasubmit()" id="signupform">
-        <h1 align="center">Signup To Fregrance</h1>
-
-        <label for="">  UserName</label>
-        <input type="text" id="uname" placeholder="Enter UserName"> <br><br>
-    
        
-    
-        <label for="">Password</label>
-        <input type="text" id="upsw" placeholder="Enter Password"> <br><br>
-    
-    
-        <label for="">Email Id</label>
-        <input type="email" id="email" placeholder="Enter Email ID"> <br> <br>
-    
-       <button>sign up</button> <br><br>
-       
-    
-    
-        
-    </form>
-        <br><br><br><br>
+            <h1>Payment Information</h1>
+		<label for="">Card type</label>
+		<select name="card_type" id="card_type" class="card_type" >
+		<option value="">--Select a card type--</option>
+		<option value="visa"> visa </option>
+		<option value="rupay"> rupay </option>
+		<option value="mastercard"> mastercard </option>
+		</select> <br><br>
+		
+        <label for="">Card number</label>
+		 <input type="number" name="card_number" id="card_number"> <br><br>
+		
 
-    <!-- <footer></footer> -->
+         <label for="">Expire Date</label> 
+		 <input type="date" name="exp_date" id="exp_date"><BR><br>
+	
+         <label for="">CVV</label>
+		 <input type="password" name="CVV" id="CVV"><br><br><br><br>
+		
+            <!-- <input type="submit" value="Pay Now"> -->
 
-    <section id="footer">
+            <button onclick="return form()">Place Order</button>
+        </form>
+      </div>
+
+        <br><br><br><br><br>
+
+
+      
+
+      <section id="footer">
         <div id="footer_icons"><h2>COMMUNITY </h2> <hr>  <br>
             <i class="fa-brands fa-facebook" style="color: #f1f2f4;"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -92,8 +121,8 @@
     </section>
 
 
-
-<script src="index.js"></script>
+    <script src="index.js"></script>
+    
 
 </body>
 </html>

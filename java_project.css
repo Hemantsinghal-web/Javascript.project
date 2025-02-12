@@ -45,6 +45,12 @@
     padding: 30px;
 }
 
+#myorder
+{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
 
 #perfumebar1 img
 {
@@ -94,7 +100,7 @@
 {
     background-image: url(perfume_for_show.jpg);
     padding: 200px;
-    color: aliceblue;
+    color: black;
 }
 
 
@@ -144,9 +150,9 @@
 
 #pi_button1
 {
-    font-size: 40px;
+    font-size: 20px;
     padding: 10px;
-    width: 100px;
+    width: 300px;
     border-radius: 10px;
 }
 
@@ -159,6 +165,133 @@
 }
 
 #discription p
+{
+    font-size: 20px;
+}
+
+
+@media screen and (min-width: 200px) and (max-width:700px)
+{
+    #navbar ul
+    {
+        display: none;
+    }
+
+    perfumebar1 img
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+    art img
+    {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+/* signup form */
+
+body
+{
+    background-image: url(perfime_signup1.jpg);
+    color: white;
+}
+
+#signupform
+{
+    align-items: center;
+    font-size: 30px;
+    margin-left: 400px;
+    margin-right: 400px;
+    /* margin-top: 10%; */
+    /* box-shadow: 0px 2px 0px 3px black; */
+    padding: 40px;
+    background-color: slategrey;
+}
+
+#signupform button
+{
+    font-size: 25px;
+    border-radius: 10px;
+}
+#signupform input
+{
+    font-size: 20px;
+}
+
+
+#login_form
+{
+    align-items: center;
+    font-size: 30px;
+    margin-left: 400px;
+    margin-right: 400px;
+    /* margin-top: 10%; */
+    /* box-shadow: 0px 2px 0px 3px black; */
+    padding: 40px;
+    background-color: slategrey;
+}
+
+#login_form input
+{
+    font-size: 20px;
+}
+
+
+#login_form button
+{
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+h1{
+    /* margin-top: 80px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 40px;
+}
+
+
+/* perfume form  */
+
+#perfume_form
+{
+    align-items: center;
+    border: 2px white;
+    background-color: whitesmoke;
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 10px;
+    /* margin-top: 100px; */
+   
+}
+
+#perfume_form form
+{
+    font-size: 20px;
+}
+
+#perfume_form button
+{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#perfume_form form input
+{
+    font-size: 20px;
+}
+
+#form_body
+{
+    background-image: url(perfume_form1.jpg);
+}
+
+#card_type
 {
     font-size: 20px;
 }
