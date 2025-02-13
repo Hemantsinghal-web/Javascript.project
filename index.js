@@ -4,20 +4,27 @@
 //     btn.style.display="block"
 //     // alert("Fas")
 // }
+var n = 0
 
 function addnum()
 {
-    let number = document.querySelector('#number').value
-    number.innerHTML =number+1;
-    alert("sfsf")
+    let number = document.querySelector('#number')
+    let qty = document.querySelector('#number').value
+    let amount = document.querySelector('#amount').value
+     number.innerHTML =n++;
+    amount.innerHTML = qty*amount;
+    // alert("sfsf")
 }
 
 
 function sub()
 {
-    let number = document.querySelector('#number').value
-    number.innerHTML =number-1;
-    alert("sfsf")
+    if(n>0){
+        let number = document.querySelector('#number')
+        number.innerHTML =n--;
+    }
+    
+    // alert("sfsf")
 }
 
 
@@ -125,8 +132,8 @@ async function table_data()
         let data = await fetch("http://localhost:3000/Perfume")
         let fdata = await data.json()
         let tdata = fdata.map((e)=>`
-        <tr>
-         <td> ${e.id} </td>
+        <tr style="border-bottom:2px solid black">
+        <td> ${e.id} </td>
         <td> ${e.name} </td>
         <td> ${e.contact} </td>
         <td> ${e.email} </td>
@@ -163,7 +170,8 @@ function savedata()
         method : "POST",
         header : {'contact-type' : 'application/json'},
         body : JSON.stringify(formdata)
-    }).then(r=>alert("Order Placed Successfully" <br> "Check Your Order In MY ORDER Section "))
+    })
+    .then(r=>alert("Order Placed Successfully \n Check Your Order In MY ORDER Section "))
 }
 
 
@@ -212,4 +220,5 @@ function finaldata(id)
         header : {'content-type' : 'application/json'},
         body : JSON.stringify(formdata)
     } )
-}then(r=>alert("update successfully"))
+    .then(r=>alert("update successfully"))
+}

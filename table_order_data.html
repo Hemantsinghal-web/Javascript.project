@@ -3,19 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Order</title>
+    <link rel="stylesheet" href="java_project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body id="table_data">
 
-    <h1>My Orders</h1>
-    <table border="">
+    <div id="Discount">
+        <marquee behavior="alternate" direction="left" scrollamount="20"> Get Extra 10% Discount, Use Code AJMAL10</marquee>
+     </div>
+ 
+ 
+    <div id="parant_navbar">
+     <div> <img src="fashion_14091764.png" alt="" width="70px" height="70px"></div>
+     <div id="navbar">
+         <ul>
+            <li>  <a href="index.html">Home</a></li>
+             <li>Shop</li>
+             <li>Gifting</li>
+             <li>About</li>
+             <li>Our Stores</li>
+             <li>Press & Media</li>
+             <li>Order Tracking</li>
+         </ul>
+        
+     </div>
+     <div id="nav_icon">
+         <i class="fa-solid fa-magnifying-glass"></i>
+        <a href="table_order_data.html"><button id="myorder">My Orders</button></a>
+         <i class="fa-regular fa-user"></i>
+     </div>
+    </div>
+
+    <h1 align="center">My Orders</h1>
+    <table border="" align="center" class="table">
         <thead>
             <th>id</th>
             <th>Name</th>
             <th>Contact</th>
             <th>Email</th>
             <th>Address</th>
-
+            <th>Delete</th>
+            <th>Edit</th>
         </thead>
 
         <tbody id="tbody"></tbody>
@@ -24,6 +53,42 @@
 
     <section id="editform">
 
+    </section>
+
+    <br><br><br><br><br>
+
+    <!-- <footer></footer> -->
+
+    <section id="footer">
+        <div id="footer_icons"><h2>COMMUNITY </h2> <hr>  <br>
+            <i class="fa-brands fa-facebook" style="color: #f1f2f4;"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+
+
+        <div><h2>IMPORTANT LINKS</h2>
+            <p>Terms and conditions <br>Privacy and policy  <br> Return and refund policy  <br>  </p>
+        </div>
+
+
+        <div><h2>QUICK LINKS</h2>
+            <p>Home  <br>  Catalog <br>  Contact</p>
+        </div>
+
+
+
+        <div><h2>CONTACT US</h2>
+            <p>Zed Lifestyle Pvt. Ltd,
+                711, Shapath V,
+                Opp. Karnavati Club,
+                SG Highway, Prahlad Nagar
+                Ahmedabad, Gujarat – 380015
+                
+                Email: support@thefreed.world
+                
+                Phone: +91 7818000555</p>
+        </div>
     </section>
 
     <script src="index.js"></script>

@@ -1,10 +1,17 @@
+*
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+
 #Discount
 {
     align-items: center;
     width: 100%;
     background-color: black;
     color: white;
-    padding-left: 40%;
+    /* padding-left: 40%; */
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 20px;
@@ -18,6 +25,11 @@
     gap: 30px;
     font-size: 20px;
 }
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
 #nav_icon
 {
     align-items: center;
@@ -27,7 +39,12 @@
     font-size: 30px;
 }
 
-
+.table
+{
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
 
 #navbar ul
 
@@ -42,14 +59,33 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    padding: 20px;  
+    position: static;
 }
 
+.button
+{
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.btn{
+    /* padding: 10px; */
+    font-size: 20px;
+    margin-left: 60px;
+    border-radius: 10px;
+}
 #myorder
 {
     padding: 10px;
     font-size: 20px;
     border-radius: 20px;
+}
+
+#perfumebar1
+{
+    /* font-family: "Pacifico", serif; */
+    font-size: 15px;
 }
 
 #perfumebar1 img
@@ -69,13 +105,15 @@
     margin-left: 110px;
     /* display: none; */
     font-size: 20px;
+    padding: 10px;
 }
 
 #perfumebar_common
 {
     display: flex;
     justify-content: space-evenly;
-    gap: 20px;
+    /* gap: 20px; */
+    /* flex-wrap: wrap; */
 }
 
 #art
@@ -87,11 +125,13 @@
     justify-content: space-around;
     color: white;
     border-radius: 20px;
+    /* flex-wrap: wrap; */
 }
 
 #art p
 {
-    padding: 50px;
+    padding: 30px;
+    font-size: 20px;
 }
 
 
@@ -99,8 +139,12 @@
 .mid_div
 {
     background-image: url(perfume_for_show.jpg);
-    padding: 200px;
+    padding: 70px 200px;
     color: black;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* font-weight: ; */
 }
 
 
@@ -115,6 +159,7 @@
     padding-bottom: 100px;
     background-image: url(perfume_footer.jpg);
     color: white;
+    /* flex-wrap: wrap; */
 }
 
 #footer_icons
@@ -134,11 +179,12 @@
 {
     display: flex;
     justify-content: space-around;
+    /* flex-wrap: wrap; */
 }
 
 #pi_top2
 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #pi_button
@@ -148,12 +194,16 @@
     border-radius: 30px;
 }
 
+
+
+
 #pi_button1
 {
     font-size: 20px;
     padding: 10px;
     width: 300px;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 #pi_button2
@@ -188,6 +238,11 @@
         width: 50px;
         height: 50px;
     }
+
+    /* #perfumebar1 img
+    {
+        width: 200px;
+    } */
 }
 
 
@@ -195,8 +250,12 @@
 
 body
 {
-    background-image: url(perfime_signup1.jpg);
-    color: white;
+    background-image: url(perfume_bg.jpg);
+    color: rgb(13, 13, 13);
+    font-weight: 200;
+    /* background-position: center; */
+    background-size: cover;
+    overflow-x: hidden;
 }
 
 #signupform
@@ -208,17 +267,21 @@ body
     /* margin-top: 10%; */
     /* box-shadow: 0px 2px 0px 3px black; */
     padding: 40px;
-    background-color: slategrey;
+    background-color: #FFF6B3;
+    border-radius: 10px;
+    color: black;
 }
 
 #signupform button
 {
     font-size: 25px;
     border-radius: 10px;
+    padding: 5px;
 }
 #signupform input
 {
     font-size: 20px;
+    padding: 5px;
 }
 
 
@@ -231,12 +294,15 @@ body
     /* margin-top: 10%; */
     /* box-shadow: 0px 2px 0px 3px black; */
     padding: 40px;
-    background-color: slategrey;
+    background-color: #FFF6B3;
+    color: black;
+
 }
 
 #login_form input
 {
     font-size: 20px;
+    padding: 5px;
 }
 
 
@@ -244,6 +310,7 @@ body
 {
     font-size: 25px;
     border-radius: 10px;
+    padding: 5px;
 }
 
 h1{
@@ -294,4 +361,29 @@ h1{
 #card_type
 {
     font-size: 20px;
+}
+.table button{
+    padding: 8px 12px;
+    border-radius: 6px;
+    /* border: none; */
+}
+.table button:hover{
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color:rgba(0, 0, 0, 0.799) ;
+    color: white;
+}
+
+#table_data
+{
+    background-image: url(table_background.jpg);
+}
+
+.table tr:nth-child(even){
+    background-color: lightgray;
+    
+}
+.table thead{
+    background-color: gray;
+    color: white;
 }
