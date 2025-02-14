@@ -243,6 +243,26 @@
     {
         width: 200px;
     } */
+
+    #perfumebar_common
+    {
+        flex-wrap: wrap;
+    }
+
+    #art
+    {
+        flex-wrap: wrap;
+    }
+
+    #footer
+    {
+        flex-wrap: wrap;
+    }
+
+    #mid_div
+    {
+        
+    }
 }
 
 
@@ -256,6 +276,7 @@ body
     /* background-position: center; */
     background-size: cover;
     overflow-x: hidden;
+    background-blend-mode: lighten;
 }
 
 #signupform
@@ -386,4 +407,10 @@ h1{
 .table thead{
     background-color: gray;
     color: white;
+}
+
+
+#logo img
+{
+    border-radius: 40px;
 }

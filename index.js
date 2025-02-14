@@ -8,8 +8,8 @@ var n = 0
 
 function addnum()
 {
-    let number = document.querySelector('#number')
-    let qty = document.querySelector('#number').value
+    // let number = document.querySelector('#number')
+    let qty = document.querySelector('#number')
     let amount = document.querySelector('#amount').value
      number.innerHTML =n++;
     amount.innerHTML = qty*amount;
