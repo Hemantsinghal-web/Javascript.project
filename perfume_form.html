@@ -26,7 +26,7 @@
         </div>
         <div id="nav_icon">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-regular fa-cart-shopping"></i>
+            <a href="table_order_data.html"><button id="myorder">My Orders</button></a>
             <i class="fa-regular fa-user"></i>
         </div>
        </div>
@@ -35,7 +35,7 @@
       <div id="perfume_form">
        
 
-        <form action="index.html" onsubmit="savedata()">
+        <form action="index.html" onsubmit="return savedata()">
             <h1> Product Ordering Form </h1>
          <label for="name">Name</label>
          <input type="text" placeholder="First Name" required  id="fname">
@@ -80,7 +80,7 @@
 		
             <!-- <input type="submit" value="Pay Now"> -->
 
-            <button onclick="return form()">Place Order</button>
+            <button >Place Order</button>
         </form>
       </div>
 

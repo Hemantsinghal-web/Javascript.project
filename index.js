@@ -168,10 +168,12 @@ function savedata()
 
     fetch('http://localhost:3000/Perfume',{
         method : "POST",
-        header : {'contact-type' : 'application/json'},
+        header : {'Content-type' : 'application/json'},
         body : JSON.stringify(formdata)
     })
     .then(r=>alert("Order Placed Successfully \n Check Your Order In MY ORDER Section "))
+
+    
 }
 
 
